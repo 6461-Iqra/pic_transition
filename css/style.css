@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+.box{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.shape1{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-image: url(../img/img1.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 35% 0, 25% 100%, 0 100%);
+
+}
+
+.shape2{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-image: url(../img/img3.png);
+    background-size: cover;
+    clip-path: polygon(65% 0%, 100% 0, 100% 100%, 75% 100%);
+
+}
+
+.shape3{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-image: url(../img/img2.png);
+    background-size: cover;
+    clip-path: polygon(35% 0, 65% 0, 75% 100%, 25% 100%);
+
+}
+
+.shape1:hover{
+    width: 800px;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.shape2:hover{
+    width: 800px;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.shape3:hover{
+    width: 800px;
+    height: 500px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
